@@ -1,0 +1,88 @@
+<SoftwareType>
+	
+	<Name>Software Name</Name>
+	<Category>Test</Category>
+	<Description>This will come up when you hover over me!</Description>
+	<Unlock>1980</Unlock>
+	<Random>0.6</Random>
+	
+	<Categories>
+		<Category Name="CategoryOne">
+			<Description>This will apear apon hover of this Catagory!</Description>
+			<Popularity>0.5</Popularity>
+			<Retention>0.5</Retention>
+			<TimeScale>0.5</TimeScale>
+			<Iterative>0.0</Iterative>
+			<NameGenerator>testgen</NameGenerator>
+		</Category>
+		
+		<Category Name="CategoryTwo">
+			<Description>Another drop down Category!</Description>
+			<Popularity>0.5</Popularity>
+			<Retention>0.5</Retention>
+			<TimeScale>0.5</TimeScale>
+			<Iterative>0.0</Iterative>
+			<NameGenerator>testgen</NameGenerator>
+		</Category>
+	</Categories>
+	
+	<OSSpecific>FALSE</OSSpecific>
+	<OneClient>FALSE</OneClient>
+	<InHouse>FALSE</InHouse>
+	<Features>
+		<Feature>
+			<Name>FeatureOne</Name>
+			<Description>Description for feature one.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+		</Feature>
+		
+		<Feature>
+			<Name>Needed</Name>
+			<Description>Needs feature one to be active in order for it to be usable</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation> 
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Dependency Software="Software Name">FeatureOne</Dependency>
+			<SoftwareCategory Category="Test">1990</SoftwareCategory>
+		</Feature>		
+		
+		<Feature Forced="TRUE">
+			<Name>ForcedFeature</Name>
+			<Description>This feature is always on, unless superceeded!</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+		</Feature>
+
+		<Feature From="ForcedFeature">
+			<Name>ForFeature</Name>
+			<Description>Superceeds the preveous one!</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Dependency Software="2D Editor">Pixel manipulation</Dependency>
+		</Feature>
+		
+		<Feature>
+			<Name>CategorySpecific</Name>
+			<Description>Only used for Category two!</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Dependency Software="2D Editor">Image rendering</Dependency>
+			<SoftwareCategory Category="CategoryTwo">2011</SoftwareCategory>
+		</Feature>
+	</Features>
+</SoftwareType>

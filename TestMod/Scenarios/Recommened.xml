@@ -1,0 +1,18 @@
+<Scenario>
+	<Name>Recommended</Name>
+	<Money>
+		<Amount>1666</Amount>
+		<Amount>5000</Amount>
+        <Amount>10000</Amount>
+        <Amount>20000</Amount>
+        <Amount>50000</Amount>
+        <Amount>500000</Amount>
+	</Money>
+	<Goals>Set Goals</Goals>
+	<Years>
+		<Year>1970</Year>
+	</Years>
+	<Events>
+	</Events>
+	<Simulation>True</Simulation>
+</Scenario>
