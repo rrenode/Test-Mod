@@ -1,0 +1,41 @@
+<SoftwareType>
+	<Name></Name>
+	<Category></Category>
+	<Description></Description>
+	<Random></Random>
+	<Popularity></Popularity>    
+    <Retention></Retention>
+    <Iterative></Iterative>
+	<OSSpecific>False</OSSpecific>
+	<OneClient>False</OneClient>
+	<InHouse>True</InHouse>
+	<NameGenerator></NameGenerator>
+	<Name></Name>
+	
+    <Categories>
+        <Category Name="Here">
+            <Description></Description>
+            <Unlock></Unlock>
+            <Popularity></Popularity>
+            <TimeScale></TimeScale>
+            <Retention></Retention>
+            <Iterative></Iterative>
+            <NameGenerator></NameGenerator>
+        </Category>
+    </Categories>
+	
+    <Features>
+        <Feature Forced="True">
+            <Name></Name>
+            <Category></Category>
+            <Description></Description>
+            <DevTime></DevTime>
+			<Innovation></Innovation>
+			<Usability></Usability>
+			<Stability></Stability>
+            <Unlock></Unlock>
+			<CodeArt></CodeArt>
+            <Dependency Software="Software Type">Feature</Dependency>
+        </Feature>
+    </Features>
+</SoftwareType>
